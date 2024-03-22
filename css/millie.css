@@ -235,7 +235,7 @@ ul, ol, li {
 
 #book_check_list {
   width: 100%;
-  height: 710px;
+  height: auto;
   background-color: #fff;
 }
 #book_check_list h2 {
@@ -253,7 +253,7 @@ ul, ol, li {
 #book_check_list .bestSellerList-wrap {
   width: 1200px;
   height: 327px;
-  margin: 0 auto;
+  margin: 74px auto;
   position: relative;
 }
 #book_check_list .bestSellerList-wrap .book-wrapper {
@@ -306,6 +306,331 @@ ul, ol, li {
 }
 #book_check_list .booklist ul:not(:first-of-type) {
   display: none;
+}
+
+#reading {
+  background-color: #f7f7f7;
+  padding: 80px 0 0;
+  width: 100%;
+  height: 860px;
+}
+#reading .section-wrap {
+  width: 1440px;
+  height: 764px;
+  margin: 0 auto;
+}
+#reading .section-wrap .reading-wrap {
+  width: 1440px;
+  height: 542px;
+  padding: 40px 24px 0;
+  margin: 0 auto;
+}
+#reading .section-wrap .reading-wrap .content-wrap {
+  position: relative;
+  width: 834px;
+  height: 504px;
+  margin: 0 auto;
+}
+#reading .section-wrap .reading-wrap .content-wrap .background-wrap {
+  width: 410px;
+  height: 502px;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-mock-230726@2x.ddb9ae2d5c7790c0cf1b5fb84bd1e3e0.png);
+  background-size: cover;
+  background-position: center;
+}
+#reading .section-wrap .reading-wrap .content-wrap .background-wrap .toolip {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: absolute;
+  top: 49%;
+  left: -3.3%;
+  width: 417px;
+  height: 153px;
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-tooltip.af41ece6e348d4b800680256f27a9892.png);
+  background-size: cover;
+  background-position: center;
+}
+#reading .section-wrap .reading-wrap .content-wrap .card-wrap {
+  height: 100%;
+}
+#reading .section-wrap .reading-wrap .content-wrap .card-wrap .card {
+  width: 172px;
+  height: 172px;
+}
+#reading .section-wrap .reading-wrap .content-wrap .card-wrap .card.card1 {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card01.a091cde3f19afee102558704e82eefe6.png);
+  background-size: cover;
+  background-position: center;
+}
+#reading .section-wrap .reading-wrap .content-wrap .card-wrap .card.card2 {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card02.f1d517fe9b18dc4a7fcdd58f7f57afbe.png);
+  background-size: cover;
+  background-position: center;
+}
+#reading .section-wrap .reading-wrap .content-wrap .card-wrap .card.card3 {
+  position: absolute;
+  top: 12%;
+  right: 0%;
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card03.099696781998fdcfbc88f69f81ddd990.png);
+  background-size: cover;
+  background-position: center;
+}
+#reading .section-wrap .reading-wrap .content-wrap .card-wrap .card.card4 {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card04.178fde7cba62b12c0e4c5ef28fa01528.png);
+  background-size: cover;
+  background-position: center;
+}
+#reading .section-wrap .textwrap h2 {
+  font-size: 49px;
+  text-align: center;
+}
+#reading .section-wrap .textwrap p {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 40px;
+  color: #555555;
+}
+
+#price {
+  width: 100%;
+  height: 771px;
+  background-color: #ffeb60;
+}
+#price h2, #price p, #price span, #price b {
+  letter-spacing: -2px;
+}
+#price #price-wrap {
+  width: 1440px;
+  height: 770px;
+  margin: 0 auto;
+  padding: 60px 2% 0 100px;
+}
+#price #price-wrap .textbox {
+  text-align: center;
+  padding-top: 40px;
+}
+#price #price-wrap .textbox h2 {
+  font-size: 49px;
+}
+#price #price-wrap .textbox p {
+  font-size: 22px;
+  margin-top: 40px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+#price #price-textbox {
+  width: 1024px;
+  height: 309px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#price #price-textbox .price_list li .maintext, #price #price-textbox .price_list1 li .maintext {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+}
+#price #price-textbox .price_list li .month span, #price #price-textbox .price_list1 li .month span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  color: #242424;
+  margin-right: 6px;
+}
+#price #price-textbox .price_list li .month p, #price #price-textbox .price_list1 li .month p {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242424;
+  margin-right: 2px;
+}
+#price #price-textbox .price_list li .month p b, #price #price-textbox .price_list1 li .month p b {
+  font-size: 15px;
+}
+#price #price-textbox .price_list li .year span, #price #price-textbox .price_list1 li .year span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  color: #242424;
+  margin-right: 6px;
+}
+#price #price-textbox .price_list li .year p, #price #price-textbox .price_list1 li .year p {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242424;
+  margin-right: 2px;
+}
+#price #price-textbox .price_list li .year p b, #price #price-textbox .price_list1 li .year p b {
+  font-size: 15px;
+}
+#price #price-textbox .price_list li .year .line-th, #price #price-textbox .price_list1 li .year .line-th {
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6f6f6f;
+  text-decoration: line-through;
+  margin: 0 8px 0 24px;
+}
+#price #price-textbox .price_list li .year .sub-info, #price #price-textbox .price_list1 li .year .sub-info {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+}
+#price #price-textbox #refund-list p {
+  font-weight: 700;
+  padding: 30px;
+}
+#price #price-textbox ul {
+  display: flex;
+}
+#price #price-textbox ul li {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+}
+#price #refund-list {
+  background-color: transparent;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#price #refund-list .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fff;
+}
+#price #refund-list .class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 16px;
+}
+
+#audioview {
+  width: 100%;
+  height: 1150px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+#audioview #top_tab {
+  width: 100%;
+  height: 108px;
+  background-color: #fff;
+}
+#audioview #top_tab ul {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+#audioview #top_tab ul .active {
+  background-color: #f7f7f7;
+}
+#audioview #top_tab ul li {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 900;
+}
+#audioview #top_tab ul li img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.audio_wrap {
+  width: 1156px;
+  height: 681px;
+  background-color: pink;
+  margin: 0 auto;
+}
+.audio_wrap .introduce {
+  display: flex;
+}
+.audio_wrap .introduce .audio-textbox h2 {
+  font-size: 49px;
+}
+.audio_wrap .introduce .audio-textbox p {
+  font-size: 22px;
+  color: #555555;
+}
+.audio_wrap .introduce .audio-textbox #slidewrap {
+  width: 100%;
+  height: 300px;
+  margin-top: 200px;
+  background-color: #007aff;
+  position: relative;
+}
+.audio_wrap .swiper-wrapper img {
+  width: 100%;
+}
+.audio_wrap video {
+  width: 100%;
+}
+.audio_wrap .swiper {
+  width: 330px;
+  height: 680px;
+}
+.audio_wrap .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audio_wrap .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.audio_wrap .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.audio_wrap .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
 }
 
 header {

@@ -7,9 +7,13 @@
     <title>Milliebook</title>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
 <script src="js/slide.js"></script>
 <script src="js/api.js"></script>
 <script src="js/click.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel="stylesheet" href="css/millie.css">
 
 <body>
@@ -250,9 +254,180 @@
                     </ul>
                 </div>
 
-           
+
 
             </div>
+        </section>
+        <section id="reading" class="reading-animation">
+            <div class="section-wrap">
+                <div class="textwrap">
+                    <h2>당신이 끝까지 읽을 책을<br>
+                        알려주는 완독지수</h2>
+                    <p>710만 밀리 회원이 먼저 읽고<br>
+                        다 읽을 확률과 예상 시간을 알려드려요</p>
+                </div>
+                <div class="reading-wrap">
+                    <div class="content-wrap">
+                        <div class="background-wrap">
+                            <div class="mock"></div>
+                            <div class="toolip"></div>
+
+
+                        </div>
+
+                        <div class="card-wrap">
+                            <div class="card card1"></div>
+                            <div class="card card2"></div>
+                            <div class="card card3"></div>
+                            <div class="card card4"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="price">
+            <div id="price-wrap">
+                <div class="textbox">
+                    <h2>언제든 해지 가능!<br>
+                        첫 달 무료로 가볍게</h2>
+                    <p>상황에 맞게 원하는 요금제를<br>
+                        자유롭게 선택하세요</p>
+                </div>
+               <div id="price-textbox">
+                <!--전자책 정기구독-->
+                <ul class="price_list">
+                    <li>
+                        <span class="maintext">전자책 정기구독</span>
+
+                        <div class="month">
+                            
+                            <p><span>월</span>9,900<b>원</b></p>
+                        </div>
+
+                        <div class="year">
+                            <p class="line-th">118,800
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/discount.8f423f8b2d39ebc92448a033200683ab.png"
+                                alt="16.6%" width="57px" ; height="29px"></p>
+                           <p><span>연</span>
+                            99,000<b>원</b></p>
+                            <p class="sub-info">밀리에서 제공한는 콘텐츠를 무제한으로</p>
+                        </div>
+
+
+                    </li>
+                </ul>
+                <ul class="price_list1">
+                 <!--종이책 정기구독-->
+                    <li>
+                        <span class="maintext">종이책 정기구독</span>
+
+                        <div class="month">
+                            <p><span>월</span>15,900<b>원</b></p>
+                            
+                        </div>
+
+                        <div class="year">
+                            <p class="line-th">202,800
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/discount.8f423f8b2d39ebc92448a033200683ab.png"
+                                alt="16.6%" width="57px" ; height="29px"></p>
+                            <p><span>연</span>
+                            183,000<b>원</b></p>
+                            <p class="sub-info">밀리의 모든 콘텐츠를 무제한으로 보고
+                                2달에 1번 종이책+전자책 배송까지</p>
+                        </div>
+
+                    </li>
+                </ul>
+
+
+
+                 
+                
+                <!--세번째 아이콘 두개-->
+                <div id="refund-list">
+                    <div class="bottom"><img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/price01.d638e23876085f686632b1e9410616c3.png"
+                            alt="icon1" width="72px" ; height="72px">
+                        <p>무료 체험 기간 동안 해지해도
+                            금액이 청구되지 않아요</p></div>
+                <div class="class">
+                  <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/price02.94d35cb1e54610f94749dc24cb1b0e70.png"
+                            alt="icon2" width="72px" ; height="72px";>
+                        <p>유료 결제되어도 사용 이력이
+                            없으면 즉시 환불해드려요</p></div>
+                    </div>
+                </ul></div>
+            </div>
+        </section>
+
+        <section id="audioview">
+
+            <div id="top_tab">
+                <ul>
+                    <li class="active"><img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-border.40db36887379dbd5eee2bc4f75aa875f.png" alt="audio">오디오북</li>
+                    <li><img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/viewer-border.dcd3ac6fb82f44757ef93aa7253bf115.png" alt="viewer">밀리 뷰어</li>
+
+                </ul>
+                <!--스와이퍼1-->
+                <div class="audio_wrap">
+                    <div class="introduce">
+                        <div class="audio-textbox">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-icon.ecfb1fa3014a2e0be79342716dc8a86f.png"
+                                alt="헤드셋">
+                            <h2>오디오북</h2>
+                            <p>세상에서 가장
+                                교양있는 수면제</p>
+                    
+                            <div id="slidewrap">
+                    
+                                <div class="slidetext">
+                                    <p>
+                                        <strong>하루의 시작과 마무리를 오디오북과 함께</strong><br>
+                                        지하철에서도, 잠들기 전에도 독서하세요
+                                    </p>
+                                </div>
+                                <div class="slidetext">
+                                    <p>
+                                        <strong>귀로 듣다가 눈으로도 같이 보면</strong><br>
+                                        더 내용이 잘 이해돼요
+                                    </p>
+                                </div>
+                                <div class="slidetext">
+                                    <p>
+                                        <strong>30분만에 책 요약</strong><br>
+                                        핵심만 쏙 골라 읽어주는 오디오북
+                                    </p>
+                                </div>
+                                <div class="slidetext">
+                                    <p>
+                                        <strong>이제훈부터 옥주현까지</strong><br>
+                                        셀럽이 읽어주는 오디오북
+                                    </p>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper mySwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content04-230728.png?v4" alt=""></div>
+                                <div class="swiper-slide"><video src="video/audiobook2.mp4" controls></video></div>
+                                <div class="swiper-slide"><img src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content01.png?v1" alt="" ></div>
+                                <div class="swiper-slide"><img src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content02.png?v1" alt=""></div>
+                              </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                 <!--스와이퍼2-->
+                 <div class="audio_wrap"></div>
+                 <div class="introduce"></div>
+
+            </div>
+
         </section>
 
     </div>
