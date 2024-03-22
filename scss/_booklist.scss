@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+#book_check_list {
+    width: 100%;
+    height: 710px;
+    background-color: #fff;
+
+    h2 {
+        font-size: $h2_fs;
+        color: #242424;
+        text-align: center;
+        @include margin($top: 60px);
+    }
+
+    p {
+        font-size: $p_fs;
+        color: #555555;
+        text-align: center;
+        @include margin($top: 40px);
+
+
+    }
+
+    .bestSellerList-wrap {
+        width: 1200px;
+        height: 327px;
+     
+        margin: 0 auto;
+        position: relative;
+        .book-wrapper {
+          
+            display: inline-flex;
+            flex-wrap: nowrap;
+            padding-right: 24px;
+            margin-bottom: 4px;
+            justify-content: space-between;
+
+
+            li {
+            
+                    cursor: pointer;
+                    padding: 6px 16px;
+                    display: block;
+                    border: 1px solid #242424;
+                    border-radius: 100px;
+                    margin-right: 5px;
+
+                    &.active{
+                        background-color: #242424;
+                        color: white;
+                    }
+            
+                }
+
+
+        }
+
+    }
+    .booklist{width: 1200px; 
+        margin: 0 auto;
+      
+        position: relative;
+        
+        height: calc(100% - 50px);
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            li {
+                width: 13.2%;
+                padding: 16px 10px 0px 7px;
+
+                h6 {
+                    font-size: 14px;
+                    color: #6f6f6f;
+                    margin-top: 3px;
+                }
+
+                h3 {
+                    font-size: 16px;
+                    color: #000000;
+                    margin-top: 3px;
+                }
+            }
+
+            &:not(:first-of-type) {
+                display: none;
+            }
+        }
+    
+}
+}

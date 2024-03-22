@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+@import "var","mixin", "reset","bookslide","booksmovie","bestbooks","challenge","booklist";
+
+
+header {
+
+    width: 1903px;
+    height: 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #dfdfdf;
+
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+       
+        @include margin($right:50px)
+    }
+
+    ul {
+        display: flex;
+        justify-items: space-evenly;
+        width: 338px;
+        height: 25px;
+
+        justify-content: space-evenly;
+        padding: 0px 24px;
+
+        li {
+            @include font($size:18px);
+            color: #333;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        background: #333;
+        border-radius: 100px;
+        padding: 5px 15px;
+     
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -.6px;
+        color: #fff;
+        text-align: center;
+        width: 93px;
+        height: 31px;
+        @include font($size:12px);
+    }
+    @include padding($right:20px);
+}
+
+.section1 {
+    width: 1903px;
+    height:  748px;
+   
+    @include padding($top:64px);
+   
+  
+
+    .section1-wrap{ 
+        z-index: 100;
+        margin: 0 auto; 
+        @include wh($w:1200px,$h:750px);
+        @include bg;
+        position: relative;
+        background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png);
+        display: block;
+        .text-wrap{
+            @include margin($top:80px);
+            @include bg($bgsize:346px, $bgposi:null);
+            @include wh($w:1104px,$h:223px);
+            background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e7658eb4f468e43253b57f8466b5.png);
+        }
+        .image-wrap{
+            position: absolute;
+            bottom:215px;
+             @include bg($bgsize:178px,$bgposi:null);
+             @include wh($w:1104px,$h:47px);
+            background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/millielibrary.e908db2a7501cfb173f997fcc3314c2a.png);
+
+           
+        }
+    }
+}
+
+
+.logo {
+    img {
+        width: 56px;
+        height: 24px;
+       
+    }
+    @include padding($left:20px);
+}
+
+.section2{
+
+
+    @include wh($w:100%,$h:875px);
+   background-color:#FFEB60;
+   .section2-wrap{
+    margin: 0 auto;
+    @include wh($w:1440px,$h:920px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 0 70px;
+}
+   .text-wrap{
+    @include wh($w:1440px);
+
+  
+   
+   
+    h2 {
+       text-align: center;
+       font-size: $h2_fs;
+       
+    } 
+   .section2-p{
+    padding-top: 23px;
+    @include wh($w:100%);
+    color: #242424;
+    text-align: center;
+
+    font-size: $p_fs;
+
+    color: #555555;
+
+   }
+ 
+   }
+   .list-wrap{
+    @include wh($w:824px,$h:444px);
+  
+    display: flex;
+    .card-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .card-list li{
+    @include wh($w:400px,$h:156px);
+border-radius: 20px;
+    background-color: #ffff;
+    padding: 32px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1), 0 8px 20px 0 rgba(0,0,0,.1);
+    }
+   }
+   .quote-list{
+    display: flex;
+    @include font($size:11px);
+    
+    flex-wrap: wrap;
+    padding: 20px 26px 16px;
+    @include wh($w:824px,$h:76px);
+    border-radius: 16px;
+   background-color: #ffe04b;
+   li{
+    padding-left: 15px; 
+    width: 50%;
+   }
+   }
+ 
+}

@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#challenge_page{
+    
+    @include wh($w:100%,$h:1510px);
+    background-color: #f7f7f7;
+    @include padding($top:80px);
+    #text_box{
+ 
+        text-align: center;
+        h2{
+            font-size: $h2_fs;
+           @include margin($top:40px);
+        }
+        p{
+            font-size: 22px;
+            @include margin($top:40px);
+
+        }
+    }
+    #img_box{
+        width: 1060px;
+        height: 568px;
+        margin: 80px auto 0;
+        position: relative;
+        background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/happy-challenge-pc.34738f2944d2b2cd84858fce215266a8.png);
+        background-size: cover;
+        background-position: center;
+    h2{
+        font-size: 40px;
+        color: #171717;
+        text-align: center;
+        padding: 48px 0 0;
+    }
+    p{
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        padding: 28px 0 0;
+
+    }
+    }
+
+    #lifestory{
+        width: 1090px;
+        height: 450px;
+        margin: 30px auto;
+     ul{
+        display: flex;
+     }
+        li:nth-of-type(1){
+            background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/happy-card-01.75ec0e4644c3c35f9af57652e06b9880.png);
+        }
+        li:nth-of-type(2){
+            background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/happy-card-02.d47788bc6872d17192cb2314ec4a8bc7.png);
+        }
+        li:nth-of-type(3){
+            background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/happy-card-03.112f8e5fa530d0cb59373fac76020a8d.png);
+        }
+        li{
+            width: 33%;
+            height: 410px;
+            border-radius: 20px;
+            margin: 0 15px;
+            background-color: #ddd;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+}
+

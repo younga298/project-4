@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milliebook</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+<script src="js/slide.js"></script>
+<script src="js/api.js"></script>
+<script src="js/click.js"></script>
+<link rel="stylesheet" href="css/millie.css">
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo"><a href="millie.html"><img src="image/millie-logo.png" alt="밀리의서재로고"></a></div>
+            <nav>
+                <ul>
+                    <li>기업문의</li>
+                    <li>회사소개</li>
+                    <li>계정관리</li>
+                </ul>
+            </nav>
+            <button class="login">로그인</button>
+        </header>
+        <section class="section1"
+            style="background-image:url(image/main-wrapcolor.jpg);background-position: left bottom;">
+
+            <div class="section1-wrap">
+                <div class="text-wrap">
+                    <div class="image-wrap"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section2-wrap">
+                <div class="text-wrap">
+                    <h2>이유 있는 NO.1<br>
+                        전 국민이 선택한
+                        독서 플랫폼</h2>
+                    <p class="section2-p">
+                        독서는 역시 밀리의 서재<br>
+                        전자책도,오디오북도 1위는 달라요
+                    </p>
+                </div>
+                <div class="list-wrap">
+                    <ul class="card-list">
+                        <li><strong>도서 보유량 1위</strong>
+                            <p>내가 찾던 베스트셀러와 매월 신간 도서
+                                국내 독서 앱 중 <span>도서 보유량 단연코 1위.</span></p>
+                        </li>
+
+                        <li><strong>누적 가입자 1위</strong>
+                            <p><span>710만 회원</span>과 함께하는 독서
+                                책 읽는 사람들은 모두 밀리에 있다는 사실!</p>
+                        </li>
+
+                        <li><strong>오디오북 품질 만족도 1위</strong>
+                            <p>완독 오디오북과 핵심 콕콕 요약본은 기본
+                                <span>오디오드라마와 밀리 캐스트까지 만나보세요.</span>
+                            </p>
+                        </li>
+
+                        <li><strong>국내 도서 분야 앱 1위</strong>
+                            <p><span>독서를 위한 모든 기능이 완비된 뷰어</span>와
+                                더 즐거운 독서 생활을 위한 다양한 활동까지!</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="quote-list">
+                    <li>2023년 상반기 기준, 전자책 구독 콘텐츠 대상, 학술 자료 제외</li>
+                    <li>2022년 한국소비자원 만족도 조사 기준</li>
+                    <li>2024년 2월 기준, 전자책 구독 서비스 이용자 기준</li>
+                    <li>2023년 11월 Google Play & App Store 국내 전자책 구독 서비스 기준</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div id="title-box">
+                <h2>당신을 기다리는<br>
+                    16만 권의 도서</h2>
+                <p>첫 달 무료 구독을 통해<br>
+                    어떤 도서가 있는지 확인해보세요</p>
+            </div>
+            <div id="bookimages">
+                <div class="book1"></div>
+                <div class="book2"></div>
+                <div class="book3"></div>
+            </div>
+
+        </section>
+
+        <!--책 영상-->
+        <div id="bookmovie">
+            <h2>나만의 공간을 아름답게<br>
+                채워주는 오브제북</h2>
+            <p>이미지와 사운드로 극대화된<br>
+                책의 감성을 오롯이 느껴보세요.</p>
+            <div id="video-box">
+                <video src="video/objectbook.mp4" controls></video>
+            </div>
+        </div>
+
+        <!--베스트 책 페이지-->
+
+        <section id="best_seller">
+
+            <div id="text_box">
+                <h2>싹 다 무제한<br>9,900원</h2>
+                <p>10년치 베스트셀러<br>신간 오디오북 장르 소설까지</p>
+            </div>
+            <div id="sellerlist">
+                <p class="bestbooks_texts">
+                    <strong>지금 서점 베스트 셀러</strong>
+                </p>
+                <div class="bestbooks_box">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <p class="bestbooks_texts">
+                    <strong>한 달 이내 출간된 책</strong>
+                </p>
+                <div class="bestbooks_box">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <p class="bestbooks_texts">
+                    <strong>오디오북 BEST</strong>
+                </p>
+                <div class="bestbooks_box">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <p class="bestbooks_texts">
+                    <strong>BEST 만화책</strong>
+                </p>
+                <div class="bestbooks_box">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="challenge_page">
+            <div id="text_box">
+                <h2>성공을 원한다면?<br>즐거운 독서생활</h2>
+                <p>챌린지로 만드는 끊임없는 동기부여</p>
+            </div>
+            <div id="img_box">
+                <h2>독서를 습관으로 만드는 챌린지</h2>
+                <p>710만 독서 데이터로 만든 즐거운 독서 생활, 효과는 120%</p>
+            </div>
+            <div id="lifestory">
+                <ul>
+                    <li class="life"></li>
+                    <li class="life"></li>
+                    <li class="life"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="book_check_list">
+            <h2>관심 분야에 있는 책도<br>
+                딱 골라드려요</h2>
+            <p>검색어 순위를 통해 뽑은<br>
+                인기 분야 책들을 확인해보세요</p>
+            <div class="bestSellerList-wrap">
+                <ul class="book-wrapper">
+                    <li class="book-item active">주식</li>
+                    <li class="book-item">영어</li>
+                    <li class="book-item">고전</li>
+                    <li class="book-item">인테리어</li>
+                    <li class="book-item">다이어트</li>
+                </ul>
+                <!--주식-->
+                <div class="booklist">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+           
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
