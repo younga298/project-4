@@ -10,6 +10,23 @@ $(function () {
         $(".booklist ul").eq(idx).fadeIn('slow').css("display","flex").siblings().hide();
     });
 
+
+    
+ 
+    $("#top_tab li").click(function(){
+        var target = $(this).index();
+        console.log(target); 
+
+        $("#top_tab li").removeClass("active");
+        $(this).addClass("active");
+
+
+        $(".introduce").eq(target).fadeIn().css("display","flex").siblings(".introduce").hide();
+    });
+
+   
+
+
 //         $('.active:eq(0)').css({ "background-color": "#fff" })
 //         $('.active:eq(1)').click(function () {
 //             $('.active').css({ "background-color": "transparent" })
