@@ -3,19 +3,19 @@
 
     #reviewsize{
         position: relative;
-        width: 1440px;  
+        width: 1250px;  
         height: 100%;
         display: flex;
-       
-
-      
-    align-items: center;
-
-    margin: 0 auto;
+        align-items: center;
+         margin: 0 auto;
     }
     .textbox{
+
         position: absolute;
-       right: 200px;
+       right: 53px;
+       transform: translateY(50px);
+       opacity: 0;
+       transition: 2s;
         h2{
             font-weight: 700;
             font-size: 49px;
@@ -36,7 +36,7 @@
 background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/review-bg.7113d143354a257d6ddad264072b913e.png);
 #bg-re{
     
-  position: absolute;    left: 80px;
+  position: absolute;    left: -7px;
   top: -60px;
     width: 415px; height: 415px; 
     

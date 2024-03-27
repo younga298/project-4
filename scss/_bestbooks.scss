@@ -9,6 +9,10 @@
     justify-content: space-around;
     text-align: center;
     #text_box {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 2s;
+    
         h2 {
             font-size: $h2_fs;
             color: #242424;

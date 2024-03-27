@@ -9,9 +9,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
-<!-- <script src="js/slide.js"></script> -->
+<script src="js/slide.js"></script>
 <script src="js/api.js"></script>
 <script src="js/click.js"></script>
+<script src="js/scroll.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel="stylesheet" href="css/millie.css">
@@ -99,13 +100,16 @@
 
         <!--책 영상-->
         <div id="bookmovie">
+            <div class="bookmovie">
+                <div class="mv-txt">
             <h2>나만의 공간을 아름답게<br>
                 채워주는 오브제북</h2>
             <p>이미지와 사운드로 극대화된<br>
-                책의 감성을 오롯이 느껴보세요.</p>
+                책의 감성을 오롯이 느껴보세요.</p></div>
             <div id="video-box">
                 <video src="video/objectbook.mp4" controls></video>
             </div>
+        </div>
         </div>
 
         <!--베스트 책 페이지-->
@@ -193,10 +197,12 @@
             </div>
         </section>
         <section id="book_check_list">
+            <div id="text-box">
             <h2>관심 분야에 있는 책도<br>
                 딱 골라드려요</h2>
             <p>검색어 순위를 통해 뽑은<br>
                 인기 분야 책들을 확인해보세요</p>
+            </div>
             <div class="bestSellerList-wrap">
                 <ul class="book-wrapper">
                     <li class="book-item active">주식</li>
@@ -376,202 +382,271 @@
                     <li class="active"><img
                             src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-border.40db36887379dbd5eee2bc4f75aa875f.png"
                             alt="audio">오디오북</li>
-                    <li><img
-                            src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/viewer-border.dcd3ac6fb82f44757ef93aa7253bf115.png"
+                    <li><img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/viewer-border.dcd3ac6fb82f44757ef93aa7253bf115.png"
                             alt="viewer">밀리 뷰어</li>
 
                 </ul>
-                <!--스와이퍼1-->
-                <div class="audio_wrap">
-                    <div class="introduce">
-                        <div class="audio-textbox">
-                            <div class="audio-text">
-                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-icon.ecfb1fa3014a2e0be79342716dc8a86f.png"
-                                    width="44px" height="44px" alt="헤드셋">
-                                <h2>오디오북</h2>
-                                <p>세상에서 가장<br>
-                                    교양있는 수면제</p>
-                            </div>
-                            <div id="slidewrap">
-
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>하루의 시작과 마무리를 오디오북과 함께</strong><br>
-                                        지하철에서도, 잠들기 전에도 독서하세요
-                                    </p>
-                                </div>
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>귀로 듣다가 눈으로도 같이 보면</strong><br>
-                                        더 내용이 잘 이해돼요
-                                    </p>
-                                </div>
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>30분만에 책 요약</strong><br>
-                                        핵심만 쏙 골라 읽어주는 오디오북
-                                    </p>
-                                </div>
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>이제훈부터 옥주현까지</strong><br>
-                                        셀럽이 읽어주는 오디오북
-                                    </p>
-                                </div>
-
-                                <div class="swiper-pagination page1"></div>
-                            </div>
+            </div>
+            <!--스와이퍼1-->
+            <div class="audio_wrap">
+                <div class="introduce">
+                    <div class="audio-textbox">
+                        <div class="audio-text">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-icon.ecfb1fa3014a2e0be79342716dc8a86f.png"
+                                width="44px" height="44px" alt="헤드셋">
+                                <div class="textbox">
+                            <h2>오디오북</h2>
+                            <p>세상에서 가장<br>
+                                교양있는 수면제</p></div>
                         </div>
-                    
-                        <div id="phonewrap">
-                            <div class="swiper mySwiper1">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img
-                                            src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content04-230728.png?v4"
-                                            alt=""></div>
-                                    <div class="swiper-slide"><video src="video/audiobook2.mp4" autoplay muted></video>
-                                    </div>
-                                    <div class="swiper-slide"><img
-                                            src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content01.png?v1"
-                                            alt=""></div>
-                                    <div class="swiper-slide"><img
-                                            src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content02.png?v1"
-                                            alt=""></div>
-                                </div>
+                        <div id="slidewrap">
+
+                            <div class="slidetext">
+                                <p>
+                                    <strong>하루의 시작과 마무리를 오디오북과 함께</strong><br>
+                                    지하철에서도, 잠들기 전에도 독서하세요
+                                </p>
                             </div>
+                            <div class="slidetext">
+                                <p>
+                                    <strong>귀로 듣다가 눈으로도 같이 보면</strong><br>
+                                    더 내용이 잘 이해돼요
+                                </p>
+                            </div>
+                            <div class="slidetext">
+                                <p>
+                                    <strong>30분만에 책 요약</strong><br>
+                                    핵심만 쏙 골라 읽어주는 오디오북
+                                </p>
+                            </div>
+                            <div class="slidetext">
+                                <p>
+                                    <strong>이제훈부터 옥주현까지</strong><br>
+                                    셀럽이 읽어주는 오디오북
+                                </p>
+                            </div>
+
+                            <div class="swiper-pagination page1"></div>
                         </div>
                     </div>
 
-                    <div class="introduce">                        
-                        <div class="audio-textbox">
-                            <div class="audio-text">
-                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-icon.ecfb1fa3014a2e0be79342716dc8a86f.png"
-                                    width="44px" height="44px" alt="헤드셋">
-                                <h2>밀리 뷰어</h2>
-                                <p>독서를 위한 가장<br>
-                                    완벽한 도구</p>
-                            </div>
-                            <div id="slidewrap">
-
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>시선 추적 기능</strong><br>
-                                        눈동자로 페이지를 넘길 수 있어요
-
-                                    </p>
+                    <div id="phonewrap">
+                        <div class="swiper mySwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img
+                                        src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content04-230728.png?v4"
+                                        alt=""></div>
+                                <div class="swiper-slide"><video src="video/audiobook2.mp4" autoplay muted></video>
                                 </div>
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>어느 기기에서도 OK</strong><br>
-                                        스마트폰, 태블릿, PC, E ink 기기까지
-                                    </p>
-                                </div>
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>다크 모드</strong><br>
-                                        전자책이 눈 아프다는 편견은 버려요
-                                    </p>
-                                </div>
-                                <div class="slidetext">
-                                    <p>
-                                        <strong>자유로운 보기 설정</strong><br>
-                                        줄간격부터 폰트까지 내 마음대로 설정하면<br>
-                                        더욱 편한 독서를 할 수 있어요
-                                    </p>
-                                </div>
-
-                                <div class="swiper-pagination page2"></div>
-                            </div>
-                        </div>
-                        <div id="phonewrap">
-
-                            <div class="swiper mySwiper2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <video src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/sight2.mp4?v1" alt="video1" autoplay muted></div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/viewer-content01.png?v1"
-                                            alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <video src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/darkmode2.mp4" autoplay muted></video>
-                                    </div>
-                                    <div class="swiper-slide"> <video src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/viewer_system2.mp4?v1" alt="video4" autoplay muted>
-                                            alt=""></div>
-                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content01.png?v1"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img
+                                        src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/audiobook-content02.png?v1"
+                                        alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="introduce">
+                    <div class="audio-textbox">
+                        <div class="audio-text">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/audiobook-icon.ecfb1fa3014a2e0be79342716dc8a86f.png"
+                                width="44px" height="44px" alt="헤드셋">
+                            <h2>밀리 뷰어</h2>
+                            <p>독서를 위한 가장<br>
+                                완벽한 도구</p>
+                        </div>
+                        <div id="slidewrap">
 
+                            <div class="slidetext">
+                                <p>
+                                    <strong>시선 추적 기능</strong><br>
+                                    눈동자로 페이지를 넘길 수 있어요
+
+                                </p>
+                            </div>
+                            <div class="slidetext">
+                                <p>
+                                    <strong>어느 기기에서도 OK</strong><br>
+                                    스마트폰, 태블릿, PC, E ink 기기까지
+                                </p>
+                            </div>
+                            <div class="slidetext">
+                                <p>
+                                    <strong>다크 모드</strong><br>
+                                    전자책이 눈 아프다는 편견은 버려요
+                                </p>
+                            </div>
+                            <div class="slidetext">
+                                <p>
+                                    <strong>자유로운 보기 설정</strong><br>
+                                    줄간격부터 폰트까지 내 마음대로 설정하면<br>
+                                    더욱 편한 독서를 할 수 있어요
+                                </p>
+                            </div>
+
+                            <div class="swiper-pagination page2"></div>
+                        </div>
+                    </div>
+                    <div id="phonewrap">
+
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <video src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/sight2.mp4?v1"
+                                        alt="video1" autoplay muted>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/viewer-content01.png?v1"
+                                        alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <video src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/darkmode2.mp4"
+                                        autoplay muted></video>
+                                </div>
+                                <div class="swiper-slide"> <video
+                                        src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/viewer_system2.mp4?v1"
+                                        alt="video4" autoplay muted>
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
 
         </section>
-      <section id="review_bg">
-        <div id="reviewsize">
-      <div id="bg-re" style="overflow: hidden;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/c-XG8k_w1LM" title="내돈내산! 밀리 구독 후기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></div>
-      <div class="textbox">
-      <h2>내돈내산<br>
-        밀리 구독 이야기</h2>
-      <p>패션 브랜드 대표부터<br>
-        고등학교 교사까지!</p></div>
-    </div>
-    </section>
-<!--질문/답변 페이지-->
-    <section id="QA_page">
-        <div id="QA_box">
-            <h2>자주 묻는 질문</h2>
-            <div id="QA_list_box">
-                <ul>
-                    <li>
-                        <p>"안쓰면 정말 환불해 주나요?
-                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png" alt="down" class="QA_icon active">
-                        </p>
-                        <ul class="QA_list_bottom" style="display: block;">
-                            <li>물론입니다. 결제 후 콘텐츠 다운로드 및 열람을 하지 않으셨다면 전액 환불해 드리고 있어요.
-                            <li>
-                                <b>[밀리 > 관리 > 구독관리 > 결제 내역 확인]</b>
-                                에서 직접 환불이 가능하며,<br>
-                                해결이 어려운 경우 고객센터로 문의해 주세요.
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <li>
-                        <p>구독 중 해지 할 수 있나요? 수수료는 없나요?
-                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png" alt="down" class="QA_icon active">
-                        </p>
-                        <ul class="QA_list_bottom" style="display: block;">
-                            <li>다음달 부터 결제되지 않도록 수수료 없이 언제든지 해지하실 수 있습니다.<br><b>[밀리 &gt; 관리 &gt; 구독관리 &gt; 자동결제 해지]</b> 메뉴를
-                                통해 기간에 상관없이 직접 가능해요.</li>
-    
-                        </ul>
-                    </li>
-                    <li>
-                        <p>무료 혜택은 누구나 받을 수 있나요?<img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png" alt="down" class="QA_icon"></p>
-                        <ul class="QA_list_bottom">
-                            <li>네, 밀리 회원이라면 누구나 첫 정기구독 신청 시 1회 첫 달 무료 혜택이 제공됩니다.<br>단, 종이책+전자책 정기구독의 경우 첫 주 무료 혜택만
-                                제공됩니다.<br>아직 신청하지 않으셨다면 바로 구독신청으로 혜택을 받아보세요.</li>
-    
-                        </ul>
-                    </li>
-                    <li>
-                        <p>어떤 기기에서 사용할 수 있나요?<img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png" alt="down" class="QA_icon"></p>
-                        <ul class="QA_list_bottom">
-    
-                            <li>아래 기기와 버전에서 밀리를 사용할 수 있습니다.<br><br>- 휴대폰 / 태블릿 : iOS13, Android 6 이상 지원 <br>- 휴대폰 / 태블릿 :
-                                iOS13, Android 6 이상 지원 <br>- E ink : Android 4.4 이상 지원<br>(크레마 그랑데, 크레마 카르타G, 이노스페이스원 공식 판매
-                                기기, 교보 Sam 7.8 등) </li>
-    
-                        </ul>
-                    </li>
-                    <li></li>
-                </ul>
+        <section id="review_bg">
+            <div id="reviewsize">
+                <div id="bg-re" style="overflow: hidden;"><iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/c-XG8k_w1LM" title="내돈내산! 밀리 구독 후기" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></div>
+                <div class="textbox">
+                    <h2>내돈내산<br>
+                        밀리 구독 이야기</h2>
+                    <p>패션 브랜드 대표부터<br>
+                        고등학교 교사까지!</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!--질문/답변 페이지-->
+        <section id="QA_page">
+            <div id="QA_box">
+                <h2>자주 묻는 질문</h2>
+                <div id="QA_list_box">
+                    <ul>
+                        <li>
+                            <p>"안쓰면 정말 환불해 주나요?
+                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png"
+                                    alt="down" class="QA_icon active">
+                            </p>
+                            <ul class="QA_list_bottom">
+                                <li>물론입니다. 결제 후 콘텐츠 다운로드 및 열람을 하지 않으셨다면 전액 환불해 드리고 있어요.
+                                <li>
+                                    <b>[밀리 > 관리 > 구독관리 > 결제 내역 확인]</b>
+                                    에서 직접 환불이 가능하며,<br>
+                                    해결이 어려운 경우 고객센터로 문의해 주세요.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p>구독 중 해지 할 수 있나요? 수수료는 없나요?
+                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png"
+                                    alt="down" class="QA_icon active">
+                            </p>
+                            <ul class="QA_list_bottom">
+                                <li>다음달 부터 결제되지 않도록 수수료 없이 언제든지 해지하실 수 있습니다.<br><b>[밀리 &gt; 관리 &gt; 구독관리 &gt; 자동결제
+                                        해지]</b> 메뉴를
+                                    통해 기간에 상관없이 직접 가능해요.</li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <p>무료 혜택은 누구나 받을 수 있나요?<img
+                                    src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png"
+                                    alt="down" class="QA_icon"></p>
+                            <ul class="QA_list_bottom">
+                                <li>네, 밀리 회원이라면 누구나 첫 정기구독 신청 시 1회 첫 달 무료 혜택이 제공됩니다.<br>단, 종이책+전자책 정기구독의 경우 첫 주 무료 혜택만
+                                    제공됩니다.<br>아직 신청하지 않으셨다면 바로 구독신청으로 혜택을 받아보세요.</li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <p>어떤 기기에서 사용할 수 있나요?<img
+                                    src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png"
+                                    alt="down" class="QA_icon"></p>
+                            <ul class="QA_list_bottom">
+
+                                <li>아래 기기와 버전에서 밀리를 사용할 수 있습니다.<br><br>- 휴대폰 / 태블릿 : iOS13, Android 6 이상 지원 <br>- 휴대폰 /
+                                    태블릿 :
+                                    iOS13, Android 6 이상 지원 <br>- E ink : Android 4.4 이상 지원<br>(크레마 그랑데, 크레마 카르타G,
+                                    이노스페이스원 공식 판매
+                                    기기, 교보 Sam 7.8 등) </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer_box">
+                <div id="footer_box_top">
+                    <h1>(주) 밀리의 서재</h1>
+
+                    <p>
+                        <a href=""><img src="image/footerlogo1.png" alt="icon"></a>
+                        <a href=""><img src="image/footerlogo2.png" alt="icon"></a>
+                        <a href=""><img src="image/footerlogo3.png" alt="icon"></a>
+
+                    </p>
+                </div>
+
+                <button id="footer_btn">사업자 정보<span>펼쳐보기 </span><img src="image/footericondown.png" alt="icon"></button>
+                <div id="footer_btn_UP">
+
+                    <ul>
+                        <li>대표이사 : 서영택</li>
+                        <li>사업자등록번호 : 423-88-00370</li>
+                        <li>호스팅 제공자 : (주)밀리의 서재</li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li>통신판매업 신고번호 : 2016-서울마포-2012호</li>
+                        <li>주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</li>
+                    </ul>
+
+                    <ul id="footer_ul_last">
+                        <li>개인정보보호 관련 문의 : privacy@millie.town</li>
+                        <li>마케팅 제휴 문의 : business@millie.town</li>
+                    </ul>
+
+                </div>
+                <div class="foot_bottom">
+                    <ul>
+                        <li>이용약관<img src="image/footericon.png" alt="icon"></li>
+                        <li>개인정보처리방침<img src="image/footericon.png" alt="icon"></li>
+                        <li>청소년보호정책<img src="image/footericon.png" alt="icon"></li>
+                        <li>고객센터<img src="image/footericon.png" alt="icon"></li>
+                        <li>B2B문의<img src="image/footericon.png" alt="icon"></li>
+                        <li>콘텐츠 제휴문의<img src="image/footericon.png" alt="icon"></li>
+                        <li>뷰어 다운로드<img src="image/footericon.png" alt="icon"></li>
+                        <li>회사 소개<img src="image/footericon.png" alt="icon"></li>
+                    </ul>
+                </div>
+
+                <p>Copyright © 2024 밀리의 서재 All Rights Reserved.</p>
+
+
+            </div>
+        </footer>
     </div>
 
 </body>

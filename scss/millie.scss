@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-@import "var","mixin", "reset","bookslide","booksmovie","bestbooks","challenge","booklist","reading","price","audioview","reviewbg","QApage";
+@import "var","mixin", "reset","sec3_bookslide","booksmovie","bestbooks","challenge","booklist","reading","price","audioview","reviewbg","QApage","footer";
 
 
 header {
 
-    width: 1903px;
+    width: 100%;
     height: 64px;
 
     display: flex;
@@ -55,9 +55,9 @@ header {
 }
 
 .section1 {
-    width: 1903px;
-    height:  748px;
-   
+    width: 100%;
+    height:  750px;
+
     @include padding($top:64px);
    
   
@@ -65,20 +65,24 @@ header {
     .section1-wrap{ 
         z-index: 100;
         margin: 0 auto; 
-        @include wh($w:1200px,$h:750px);
+        @include wh($w:1250px,$h:750px);
         @include bg;
         position: relative;
         background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png);
         display: block;
         .text-wrap{
+            transform: translateY(100px);
+            opacity: 0;
+            transition: 2s;
             @include margin($top:80px);
             @include bg($bgsize:346px, $bgposi:null);
             @include wh($w:1104px,$h:223px);
             background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e7658eb4f468e43253b57f8466b5.png);
+          position: relative;
         }
         .image-wrap{
             position: absolute;
-            bottom:215px;
+            top:500px;
              @include bg($bgsize:178px,$bgposi:null);
              @include wh($w:1104px,$h:47px);
             background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/millielibrary.e908db2a7501cfb173f997fcc3314c2a.png);
@@ -105,7 +109,7 @@ header {
    background-color:#FFEB60;
    .section2-wrap{
     margin: 0 auto;
-    @include wh($w:1440px,$h:920px);
+    @include wh($w:1250px,$h:920px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,7 +118,10 @@ header {
     padding: 80px 0 70px;
 }
    .text-wrap{
-    @include wh($w:1440px);
+    @include wh($w:100%);
+    transform: translateY(100px);
+            opacity: 0;
+            transition: 2s;
 
   
    
@@ -146,6 +153,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 2s;
     }
     .card-list li{
     @include wh($w:400px,$h:156px);

@@ -22,7 +22,24 @@ $(function () {
 
 
         $(".introduce").eq(target).fadeIn().css("display","flex").siblings(".introduce").hide();
+   
+    
+
+           
+            });
+        
+     
+   
+   
+   
+   
+   
+   
+   
+   
     });
+
+
 
    
 
@@ -91,4 +108,3 @@ $(function () {
 
    
 
-});

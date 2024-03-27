@@ -6,7 +6,7 @@
     background-color: #f7f7f7;
     @include padding($top:80px);
     #text_box{
- 
+         
         text-align: center;
         h2{
             font-size: $h2_fs;
@@ -17,6 +17,10 @@
             @include margin($top:40px);
 
         }
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 2s;
+    
     }
     #img_box{
         width: 1060px;
@@ -33,6 +37,9 @@
         padding: 48px 0 0;
     }
     p{
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 1s;
         font-size: 20px;
         color: #333;
         text-align: center;
@@ -42,6 +49,10 @@
     }
 
     #lifestory{
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+        transition-delay:0.9s ;
         width: 1090px;
         height: 450px;
         margin: 30px auto;

@@ -1,13 +1,31 @@
 $(function () {
-    $(".slidetext:first").show();
+  $("#QA_list_box li p").click(function () {      
+      $(this).next().slideToggle(); 
+      $(this).children().toggleClass('rotate')   
+  });
 
-    $(".swiper-pagination-bullet").click(function(){
-      var slide=$(".slidetext:visible");
-      var nextslide=slide.next(".slidetext");
-      if(nextslide.length ===0){
-        nextslide =$(".slidetext:first");
-      }
-      // slide.hide();
-      nextslide.show(); 
-    });
+
+
+
+  $("#footer_btn").click(function () {  
+    $("#footer_btn_UP").slideToggle();
+
+    if($("#footer_btn_UP:visible")==true){
+      $(this).find("span").text('펼쳐보기');
+      $(this).find("img").attr("src","image/footericondown.png")
+    }else{
+      $(this).find("span").text('접어두기');
+      $(this).find("img").attr("src","image/footericonup.png")
+    }
+    
+  });
+
+  $("#footer_btnUp").click(function () {
+    $(this).hide();
+    
+    $("#footer_btn_UP").slideUp();
+    $("#footer_btn").show();
+  });
 });
+
+

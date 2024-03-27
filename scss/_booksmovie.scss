@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 #bookmovie{
+ 
     @include wh($w:100%,$h:802px);
     @include padding
     ($top:80px, $right:0px,$bottom:120px,$left:0px);
@@ -9,6 +10,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    .bookmovie{
+        width: 1250px; margin: 0 auto; text-align: center;
+        .mv-txt{
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 2s;}
+    
+    
     h2{
         font-size: $h2_fs;
         margin: 0 0  24px 0;
@@ -17,11 +26,14 @@
     p{
         font-size: $p_fs;
         margin: 0 0  24px 0;
-    }
+    } 
+}
+   
 }
     #video-box{
         width: 730px;
         height: 410px;
+        margin: 0 auto;
         video{
             @include wh($w:100%,$h:100%);
         }
