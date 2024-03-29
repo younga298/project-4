@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+
+#reading{
+    background-color: #f7f7f7;
+    padding: 80px 0 0;
+    width:100%;
+    height: 860px;
+    .section-wrap{
+        width: 1250px; height: 764px;
+        margin: 0 auto;
+        .reading-wrap{
+            width: 100%; 
+            height: 542px;
+    
+            padding: 40px 24px 0;
+            margin: 0 auto;
+            .content-wrap{
+                position: relative;
+                width: 834px;
+                height: 504px;
+             
+                margin: 0 auto;
+                .background-wrap {
+                    width: 410px;
+                    height: 502px;
+              
+                    position: absolute;
+                    transform: translate(-50%);
+                    left: 50%;
+                    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-mock-230726@2x.ddb9ae2d5c7790c0cf1b5fb84bd1e3e0.png);
+                    background-size: cover;
+                    background-position: center;
+            
+                    .toolip {
+                        box-shadow: 10px 10px 40px rgba(0,0,0,.1);
+                        border-radius: 8px;
+                        position: absolute;
+                        top: 49%;
+                        left: -3.3%;
+                        width: 417px;
+                        height: 153px;
+            
+                        background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-tooltip.af41ece6e348d4b800680256f27a9892.png);
+                        background-size: cover;
+                        background-position: center;
+                    }           
+                    
+                }
+                        .card-wrap {
+                            height: 100%;
+                            transform: translateY(20px);
+                            opacity: 0;
+                            transition: 2s;
+                        
+                        
+                            .card {
+                                width: 172px;
+                                height: 172px;
+                                transform: scale(0);
+                                transition: 0.3s ease-out;
+
+                                
+                              
+
+                                &.card1 {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -10%;
+                                    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card01.a091cde3f19afee102558704e82eefe6.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                }
+
+
+                                &.card2 {
+                                    position: absolute;
+                                    top: 10%;
+                                    left: 0%;
+                                    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card02.f1d517fe9b18dc4a7fcdd58f7f57afbe.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    transition-delay: 0.4s;
+                                }
+
+
+                                &.card3 {
+                                    position: absolute;
+                                    top: 12%;
+                                    right: 0%;
+                                    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card03.099696781998fdcfbc88f69f81ddd990.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    transition-delay: 0.2s;
+                                
+                                }
+
+
+                                &.card4 {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: -10%;
+                                    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card04.178fde7cba62b12c0e4c5ef28fa01528.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    transition-delay: 0.6s;
+
+                                }
+                            }
+                        }
+                        }
+        }
+    .textwrap{
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 2s;
+    
+    h2{
+        font-size: 49px;
+        text-align: center;
+        
+    }
+    p{
+        font-size: 22px;
+        text-align: center;
+        margin-top: 40px;
+        color:#555555;
+    }
+}
+}}

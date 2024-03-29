@@ -241,3 +241,26 @@ for (let i in list05) {
            
         });
 }
+
+
+let list06 = ["인간실격"]
+
+for (let i in list06) {
+
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book",
+        data: { query: list06[i] },
+  
+        headers: { Authorization: "KakaoAK a787dd0a976aed4b35d6d7d50eb2b540" }
+    })
+        .done(function (msg) {         
+      
+
+            $('.book').append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            $('.textbox').append("<p>" + msg.documents[0].title + "</p>");
+            $('.textbox').append("<span>" + msg.documents[0].authors + "</span>");
+
+        });
+}

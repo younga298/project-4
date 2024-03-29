@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+#wrap {
+  width: 1250px;
+  height: auto;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  margin: 0 auto;
+}
+
+#book {
+  display: flex;
+  align-items: center;
+  width: 1250px;
+  height: 407px;
+  margin: 0 auto;
+  border-bottom: 12px solid #f7f7f7;
+}
+#book .book {
+  width: 220px;
+  height: 331px;
+  margin-left: 20px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1), 16px 10px 23px 0 rgba(0, 0, 0, 0.1);
+}
+#book .book img {
+  width: 100%;
+  height: 100%;
+}
+#book .book_intr {
+  width: 900px;
+  height: 331px;
+  margin-left: 40px;
+}
+#book #buttons {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+#book #buttons li {
+  width: 90px;
+  height: 36px;
+  background-color: rgba(176, 179, 188, 0.2);
+  color: #8b8b8b;
+  margin: 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2px 0px 2px 0px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1), 2px 4px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#book #buttons .active {
+  background-color: white;
+  font-weight: bold;
+}
+#book .textbox {
+  width: 300px;
+  height: 70px;
+  margin-top: 30px;
+  margin-bottom: 85px;
+}
+#book .textbox span {
+  color: #888888;
+}
+#book .textbox p {
+  font-weight: 700;
+  font-size: 20px;
+}
+#book #read-more {
+  width: 900px;
+  height: 90px;
+  background-color: #fafaf6;
+  border-radius: 12px;
+  position: relative;
+}
+#book #read-more li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  align-items: center;
+  width: 300px;
+}
+#book #read-more li p {
+  font-size: 10px;
+  color: #8b8b8b;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 2px;
+}
+#book #read-more li span {
+  font-weight: 700;
+  color: #242424;
+}
+#book #read-more .border {
+  border-left: 2px solid;
+  color: #dfdfdf;
+  border-right: 2px solid;
+}
+#book #read-more {
+  display: flex;
+}
+#book #read-more #imgflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+#book #read-more #imgflex img {
+  width: 20px;
+  height: 20px;
+}
+
+header {
+  border-bottom: solid 1px #dfdfdf;
+  width: 100%;
+  height: 64px;
+}
+header #headersize {
+  width: 1250px;
+  height: 64px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #dfdfdf;
+  padding-right: 20px;
+}
+header #headersize nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-right: 50px;
+}
+header #headersize ul {
+  display: flex;
+  justify-items: space-evenly;
+  width: 450px;
+  height: 25px;
+  justify-content: space-evenly;
+  padding: 0px 24px;
+}
+header #headersize ul li {
+  font-size: 18px;
+  color: #333;
+  padding: 0px 10px 0px 10px;
+}
+header #headersize ul li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+header #headersize button {
+  cursor: pointer;
+  background: #333;
+  border-radius: 100px;
+  padding: 5px 15px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.6px;
+  color: #fff;
+  text-align: center;
+  width: 93px;
+  height: 31px;
+  font-size: 12px;
+}
+header #headersize #join {
+  display: flex;
+  width: 154px;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+header #headersize .logo {
+  padding-left: 20px;
+}
+header #headersize .logo img {
+  width: 56px;
+  height: 24px;
+}

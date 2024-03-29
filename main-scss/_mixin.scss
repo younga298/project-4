@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import "var";
+// @mixin flex($direction: row, $justify: center, $align: center) {
+//     display: flex;
+//     flex-direction: $direction;
+//     justify-content: $justify;
+//     align-items: $align;
+// }
+
+/*font*/
+
+
+@mixin font($style :normal,
+  $weight : normal,
+    $size : 16px,
+    $family : sans-serif) {
+    font: {
+        style:$style;
+        weight:$weight;
+        size: $size;
+        family: $family;
+    }
+}
+ /*margin*/ 
+@mixin margin($top:0, $right:0,$bottom:0,$left:0){
+    margin:$top $right $bottom $left;}
+ /*padding*/ 
+ @mixin padding($top:0, $right:0,$bottom:0,$left:0){
+    padding:$top $right $bottom $left;
+ }   
+
+ /*w,h값 */
+ @mixin wh($w:auto,$h:auto){
+    width:$w;
+    height:$h;
+ }
+
+ @mixin bg($bg:transparent,$bgsize:765px,$bgrepeat:no-repeat,$bgposi:96% -30%){
+   background:$bg;
+   background-size:$bgsize;
+   background-repeat:$bgrepeat;
+   background-position:$bgposi;
+ }
