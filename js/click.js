@@ -30,6 +30,19 @@ $(function () {
         
      
    
+        // var isAuto = false;
+        let count = 0;
+        $("#booktotal .more").click(()=>{
+            count++;
+          
+            if(count == 0 || count ==16){
+                count =0;
+                $("#booktotal .booktotal").animate({"height" : 664});
+            } else {               
+                $("#booktotal .booktotal").animate({"height" : 664+(300*count) });
+            }
+            // isAuto = !isAuto;
+        })
    
    
    
@@ -38,6 +51,9 @@ $(function () {
    
    
     });
+
+
+
 
 
 

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+#booktotal{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+
+    .booktotal{
+    width: 1250px;
+    height: 630px;
+        margin: 0 auto; overflow: hidden;
+        h3{
+            padding-left: 20px;
+            font-size: 16px;
+            color: #000000;
+            margin-top: 13px;
+        }
+      
+     ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+       padding-top: 30px;
+       padding-left: 20px;
+       
+     li{
+        width: 180px;
+        height: 300px;
+      
+     } 
+     h6 {
+        font-size: 14px;
+        color: #6f6f6f;
+        margin-top: 3px;
+        
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #000000;
+        margin-top: 3px;
+
+        padding-left: 7px;
+    }
+     }
+    }
+     .more{
+        color: #a451f7;
+        font-size: 14px;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+        outline: 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 12px solid #f7f7f7;
+    }
+  
+}
