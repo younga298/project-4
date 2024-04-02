@@ -258,9 +258,9 @@ for (let i in list06) {
         .done(function (msg) {         
       
 
-            $('.book').append("<img src='" + msg.documents[0].thumbnail + "'/>");
-            $('.textbox').append("<p>" + msg.documents[0].title + "</p>");
-            $('.textbox').append("<span>" + msg.documents[0].authors + "</span>");
+            $('#book .book').append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            $('#book .textbox').append("<p>" + msg.documents[0].title + "</p>");
+            $('#book .textbox').append("<span>" + msg.documents[0].authors + "</span>");
 
         });
 }
@@ -300,4 +300,9 @@ for (let i in list07) {
 
            
         });
+
+
+    $.get('./textfile/intro.txt',function(data){
+        $(".open").html(data)
+    })
 }

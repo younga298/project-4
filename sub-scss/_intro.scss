@@ -1,0 +1,134 @@
+@charset "utf-8";
+.intro {
+    height: auto;
+    width: 1250px;
+    margin: 0 auto;
+   .open{
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    h3 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 12px;
+      
+
+    }
+    span{
+        color:#555;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+  ul{
+    background-color: #fafaf6;
+    width: 1250px;
+    height: 100px;
+    display: flex;
+    li{
+        border-right: 1px #dfdfdf solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 100px;
+        
+        
+        p{
+            color:#8b8b8b;
+            font-size: 12px;
+            margin-bottom: 14px;
+            
+        }
+        strong{
+            color:#555;
+            font-size: 15px;
+                        
+        }
+    }
+  }
+  #keyword{
+    width: 1250px;
+     height: 100px;
+     padding: 25px 25px;
+     border-bottom: 1px #dfdfdf solid;
+     h3{
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 12px;
+     }
+     p{
+        border-radius: 15px;
+        background-color: #dfdfdf;
+        width: 55px;
+        height: 25px;
+        text-align: center;
+        padding: 3px;
+        font-size: 14px;
+     }
+  }
+  #AI{
+    width: 1250px;
+    height: 146px;
+    padding: 25px 25px;
+    border-bottom: 1px #dfdfdf solid;
+    p{
+        font-size: 14px;
+        color:#555
+       }
+    h3{
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    #altts{
+        width: 120px;
+        display: flex;
+         justify-content: space-around;
+         align-items: center;
+         font-size: 14px;
+        font-weight: bold;
+        color: #555;
+     
+        .one-icon{overflow: hidden;
+        width: 50px; height: 50px;
+        border-radius: 40px;
+        
+        img{
+        width: 100%;
+        height: 100%;
+        }}
+    }
+  }
+  #YP{
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    height: 80px;
+    padding: 25px 25px;
+    border-bottom: 12px solid #f7f7f7;
+    #flex{
+        width: 120px;
+        display: flex;
+    align-items: center;
+   p{
+    font-size: 14px;
+    
+   }
+    justify-content: space-evenly;
+    }
+    .YP{
+        width: 36px; height: 36px;
+        overflow: hidden;
+        img{width: 100%;}
+    }
+  }
+  .yp-link{
+color: #8b8b8b;
+font-size: 13px;
+  }
+}

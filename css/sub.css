@@ -312,6 +312,9 @@ ul, ol, li {
   font-size: 12px;
   padding-left: 5px;
 }
+.char-story ul {
+  width: 97%;
+}
 .char-story ul .top {
   height: 102px;
   padding: 15px 0px 0px 27px;
@@ -368,6 +371,212 @@ ul, ol, li {
   position: relative;
   padding-right: 5px;
   margin-right: 5px;
+}
+
+.intro {
+  height: auto;
+  width: 1250px;
+  margin: 0 auto;
+}
+.intro .open {
+  height: 200px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.intro .open h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.intro .open span {
+  color: #555;
+  font-size: 14px;
+  font-weight: 700;
+}
+.intro .open p {
+  font-size: 13px;
+}
+.intro ul {
+  background-color: #fafaf6;
+  width: 1250px;
+  height: 100px;
+  display: flex;
+}
+.intro ul li {
+  border-right: 1px #dfdfdf solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 100px;
+}
+.intro ul li p {
+  color: #8b8b8b;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.intro ul li strong {
+  color: #555;
+  font-size: 15px;
+}
+.intro #keyword {
+  width: 1250px;
+  height: 100px;
+  padding: 25px 25px;
+  border-bottom: 1px #dfdfdf solid;
+}
+.intro #keyword h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.intro #keyword p {
+  border-radius: 15px;
+  background-color: #dfdfdf;
+  width: 55px;
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+  font-size: 14px;
+}
+.intro #AI {
+  width: 1250px;
+  height: 146px;
+  padding: 25px 25px;
+  border-bottom: 1px #dfdfdf solid;
+}
+.intro #AI p {
+  font-size: 14px;
+  color: #555;
+}
+.intro #AI h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.intro #AI #altts {
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+.intro #AI #altts .one-icon {
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+.intro #AI #altts .one-icon img {
+  width: 100%;
+  height: 100%;
+}
+.intro #YP {
+  display: flex;
+  justify-content: space-between;
+  width: 1250px;
+  height: 80px;
+  padding: 25px 25px;
+  border-bottom: 12px solid #f7f7f7;
+}
+.intro #YP #flex {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.intro #YP #flex p {
+  font-size: 14px;
+}
+.intro #YP .YP {
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+}
+.intro #YP .YP img {
+  width: 100%;
+}
+.intro .yp-link {
+  color: #8b8b8b;
+  font-size: 13px;
+}
+
+#review-com {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1250px;
+  margin: 0 auto;
+  height: 502px;
+  background-color: rgb(207, 151, 207);
+}
+#review-com #review {
+  width: 100%;
+  height: 100%;
+}
+#review-com #review #comment {
+  width: 1050px;
+  height: 300px;
+  background-color: red;
+}
+#review-com #review #comment li {
+  width: 100%;
+  height: 100px;
+  background-color: purple;
+}
+#review-com #review #comment li #icon-and-id {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 30px;
+  font-size: 13px;
+  background-color: aqua;
+}
+#review-com #review #comment li #icon-and-id p {
+  margin-left: 5px;
+}
+#review-com #review #comment li .img-radius {
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+}
+#review-com #review #comment li .img-radius img {
+  width: 100%;
+}
+#review-com #review p {
+  color: #878787;
+  font-weight: bold;
+}
+#review-com #review .riview-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 7%;
+  justify-content: space-between;
+  font-weight: bold;
+}
+#review-com #review .riview-link span {
+  color: orange;
+  font-weight: bold;
+}
+#review-com #data-comment-like {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 38px;
+  width: 350px;
+  background-color: pink;
+  font-size: 12px;
+}
+#review-com #data-comment-like a {
+  margin: 5px 0px 5px 0px;
+}
+#review-com #data-comment-like span {
+  color: #8b8b8b;
+  font-size: 10px;
 }
 
 header {

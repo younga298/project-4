@@ -1,0 +1,26 @@
+#review-com {
+  width: 1250px;
+  margin: 0 auto;
+  height: 502px;
+  background-color: rgb(207, 151, 207);
+}
+#review-com #review {
+  width: 100%;
+  height: 100%;
+}
+#review-com #review p {
+  color: #878787;
+  font-weight: bold;
+}
+#review-com #review .riview-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 7%;
+  justify-content: space-between;
+  font-weight: bold;
+}
+#review-com #review .riview-link span {
+  color: orange;
+  font-weight: bold;
+}
