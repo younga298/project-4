@@ -19,7 +19,54 @@
             display: flex;
             flex-wrap: wrap;
             border: 1px #dfdfdf solid;
+            .his-modal{              
+                padding: 20px;
+                background-color: white;
+                border-radius: 12px;
+                box-shadow: 0 0 4px rgba(0,0,0,.12), 2px 6px 12px rgba(0,0,0,.12);
+                position: absolute;
+                top: -10px;
+                left: 0px;
+                width: 296px;
+                height: 200px;
+                z-index: 10;
+                .header{
+                    strong{
+                        display: block;
+                        font-size: 16px;
+                    }
+                    button{
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/x-close.f829955e572734d4ff88ec5e71c8efb0.png) 0 0 no-repeat;
+                        background-size: 24px;
+                        display: block;
+                        text-indent: -99999em;
+                        width: 24px;
+                        height: 24px;
+                        border: none;
+                    }
+                    .desc{
+                        color: #6f6f6f;
+                        font-size: 14px;
+                        margin-top: 4px;
+                    }
+                    #list{
+                        margin-top: 4px;
+                        
+                        div{
+                            position: relative;
+                            color:#6f6f6f;
+                            font-size: 10px;
+                            padding: 0 0 0 10px;
+                            margin-top: 2px;
+                            border: none;
+                        }
+                    }
 
+                }
+               }
             #inner-outtext {
                 font-size: 12px;
                 color: #8b8b8b;
@@ -112,7 +159,8 @@
     width: 160px;
     height: 27px;
     margin-left: 27px;
-
+  
+  
     .textbutton {
         display: flex;
         width: 100%;
@@ -227,4 +275,5 @@
             }
         }
     }
+  
 }

@@ -192,6 +192,50 @@ ul, ol, li {
   flex-wrap: wrap;
   border: 1px #dfdfdf solid;
 }
+#book-history #chart-content .inner .his-modal {
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 2px 6px 12px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 296px;
+  height: 200px;
+  z-index: 10;
+}
+#book-history #chart-content .inner .his-modal .header strong {
+  display: block;
+  font-size: 16px;
+}
+#book-history #chart-content .inner .his-modal .header button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/x-close.f829955e572734d4ff88ec5e71c8efb0.png) 0 0 no-repeat;
+  background-size: 24px;
+  display: block;
+  text-indent: -99999em;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+#book-history #chart-content .inner .his-modal .header .desc {
+  color: #6f6f6f;
+  font-size: 14px;
+  margin-top: 4px;
+}
+#book-history #chart-content .inner .his-modal .header #list {
+  margin-top: 4px;
+}
+#book-history #chart-content .inner .his-modal .header #list div {
+  position: relative;
+  color: #6f6f6f;
+  font-size: 10px;
+  padding: 0 0 0 10px;
+  margin-top: 2px;
+  border: none;
+}
 #book-history #chart-content .inner #inner-outtext {
   font-size: 12px;
   color: #8b8b8b;
@@ -505,27 +549,33 @@ ul, ol, li {
 }
 
 #review-com {
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 1250px;
   margin: 0 auto;
-  height: 502px;
-  background-color: rgb(207, 151, 207);
+  height: 520px;
 }
 #review-com #review {
   width: 100%;
   height: 100%;
+  margin-top: 20px;
 }
 #review-com #review #comment {
-  width: 1050px;
-  height: 300px;
-  background-color: red;
+  width: 1250px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+#review-com #review #comment #flex {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-between;
 }
 #review-com #review #comment li {
-  width: 100%;
-  height: 100px;
-  background-color: purple;
+  width: 96.5%;
+  margin-bottom: 20px;
 }
 #review-com #review #comment li #icon-and-id {
   display: flex;
@@ -533,10 +583,9 @@ ul, ol, li {
   width: 260px;
   height: 30px;
   font-size: 13px;
-  background-color: aqua;
 }
 #review-com #review #comment li #icon-and-id p {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 #review-com #review #comment li .img-radius {
   overflow: hidden;
@@ -552,12 +601,15 @@ ul, ol, li {
   font-weight: bold;
 }
 #review-com #review .riview-link {
-  width: 100%;
+  width: 98.4%;
   display: flex;
   align-items: center;
   height: 7%;
   justify-content: space-between;
   font-weight: bold;
+}
+#review-com #review .riview-link .icon-right {
+  transform: rotate(-90deg);
 }
 #review-com #review .riview-link span {
   color: orange;
@@ -568,7 +620,6 @@ ul, ol, li {
   flex-direction: column;
   padding: 0px 38px;
   width: 350px;
-  background-color: pink;
   font-size: 12px;
 }
 #review-com #data-comment-like a {
@@ -578,7 +629,124 @@ ul, ol, li {
   color: #8b8b8b;
   font-size: 10px;
 }
+#review-com .inner {
+  display: flex;
+  align-items: center;
+}
+#review-com .inner button {
+  background-color: #c1c1c1;
+  width: 70px;
+  height: 65px;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  margin-left: 10px;
+  border: none;
+}
+#review-com .inner .img-icon {
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+#review-com .inner .img-icon img {
+  width: 100%;
+  height: 100%;
+}
+#review-com .inner label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  width: 1086px;
+  border: solid 1px #dfdfdf;
+  border-radius: 5px;
+  padding: 10px;
+}
+#review-com .inner label .label {
+  padding-bottom: 5px;
+  color: #8b8b8b;
+}
+#review-com .inner #textarea {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: white;
+  resize: none;
+  width: 1100px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+#review-com .inner #textarea::-moz-placeholder {
+  color: #dfdfdf;
+}
+#review-com .inner #textarea::placeholder {
+  color: #dfdfdf;
+}
+#review-com #create-guide {
+  display: flex;
+  align-items: center;
+  width: 1250px;
+  height: 20px;
+  margin: 0 auto;
+  font-size: 15px;
+  padding-top: 30px;
+  color: #a5a5a5;
+}
 
+#banner {
+  margin: 0 auto;
+  width: 1250px;
+  height: 100px;
+  background-color: rgb(202, 133, 82);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner .textbox {
+  color: white;
+  font-size: 14px;
+  width: 280px;
+  line-height: 25px;
+}
+#banner .banner {
+  display: flex;
+}
+
+#user-contain-book {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 25px;
+  overflow: hidden;
+}
+#user-contain-book .user-contain-book ul {
+  width: 110%;
+  margin-top: 20px;
+  display: flex;
+}
+#user-contain-book .user-contain-book ul li {
+  margin-right: 10px;
+}
+#user-contain-book .user-contain-book ul li img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+#user-contain-book .user-contain-book ul li h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#user-contain-book .user-contain-book ul li h6 {
+  color: #6f6f6f;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   border-bottom: solid 1px #dfdfdf;
   width: 100%;

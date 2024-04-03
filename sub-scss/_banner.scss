@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#banner{
+    margin: 0 auto;
+    width: 1250px;
+    height: 100px;
+    background-color: rgb(202, 133, 82);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textbox{
+        color: white;
+        font-size: 14px;
+        width: 280px;
+       line-height: 25px;
+    }
+    .banner{
+    display: flex;
+    }
+}

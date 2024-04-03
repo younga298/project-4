@@ -306,3 +306,26 @@ for (let i in list07) {
         $(".open").html(data)
     })
 }
+
+
+let list08 = ["소크라테스의","위대한 개츠비", "젊은 베르테르의 슬픔", "죄와 벌1", "변신", "날개", "이반 일리치의 죽음","나미야","편의점"]
+
+for (let i in list08) {
+
+
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book",
+        data: { query: list08[i] },
+  
+        headers: { Authorization: "KakaoAK a787dd0a976aed4b35d6d7d50eb2b540" }
+    })
+        .done(function (msg) {
+
+          
+            const lis = $('#user-contain-book .user-contain-book ul').eq(0).find('li');
+            lis.eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            lis.eq(i).append("<h4>" + msg.documents[0].title + "</h4>");
+            lis.eq(i).append("<h6>" + msg.documents[0].authors + "</h6>");
+       });
+      }
