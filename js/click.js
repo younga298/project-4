@@ -1,4 +1,4 @@
-$(function () { 
+  $(function () { 
  
 
     $('.book-wrapper li').click(function () {
@@ -28,17 +28,52 @@ $(function () {
            
             });
         
-     
+     // var isAuto = false;
+     let count = 0;
+     $("#booktotal .more").click(()=>{
+         count++;
+
+         if(count == 0 || count ==16){
+             count =0;
+             $("#booktotal .booktotal").animate({"height" : 664});
+         } else {               
+             $("#booktotal .booktotal").animate({"height" : 664+(300*count) });
+         }
+         // isAuto = !isAuto;
+     })
    
         // var isAuto = false;
         $(".intro .more").click(() => {
             let $open = $(".open");
-            if ($open.hasClass("open")) {
-                $open.animate({"height": "200px"}).removeClass("open");
+            if ($open.css("height") === "200px") {
+                $open.animate({"height": "420px"});
+                $open.children(".textbox").delay(400).animate({"height": "380px"});
             } else {
-                $open.addClass("open").animate({"height": "auto"});
+                $open.animate({"height": "200px"});
+                $open.children(".textbox").animate({"height": "160px"});
             }
         });
+
+
+
+        $(".textbutton").click(function(){
+            $(".his-modal").toggle();
+        });
+        $(".close").click(function(){
+            $(".his-modal").hide();
+        });
+
+
+        $('#buttons li').click(function () {
+            let idx=$(this).index();
+      
+            $('#buttons li').removeClass("active")
+            $(this).addClass("active")     
+            
+        });
+    
+
+
     });
 
 
@@ -46,68 +81,6 @@ $(function () {
 
 
    
-
-
-//         $('.active:eq(0)').css({ "background-color": "#fff" })
-//         $('.active:eq(1)').click(function () {
-//             $('.active').css({ "background-color": "transparent" })
-//             $(this).css({ "background-color": "#242424","color":"#fff"  })
-//             $(".booklist ul:nth-of-type(2)").fadeIn('slow').css("display","flex");
-//             $(".booklist ul:nth-of-type(1)").hide();
-//             $(".booklist ul:nth-of-type(3)").hide();
-//             $(".booklist ul:nth-of-type(4)").hide();
-//             $(".booklist ul:nth-of-type(5)").hide();
-            
-      
-
-
-//     });
-
-
-
-//     $('.active:eq(2)').click(function () {
-//         $('.active').css({ "background-color": "transparent" })
-//         $(this).css({ "background-color": "#242424","color":"#fff"  })
-//         $(".booklist ul:nth-of-type(3)").fadeIn('slow').css("display","flex");
-//         $(".booklist ul:nth-of-type(1)").hide();
-//         $(".booklist ul:nth-of-type(2)").hide();
-//         $(".booklist ul:nth-of-type(4)").hide();
-//         $(".booklist ul:nth-of-type(5)").hide();
-     
-
-
-// });
-
-
-// $('.active:eq(3)').click(function () {
-//     $('.active').css({ "background-color": "transparent" })
-//     $(this).css({ "background-color": "#242424","color":"#fff"  })
-//     $(".booklist ul:nth-of-type(4)").fadeIn('slow').css("display","flex");
-//     $(".booklist ul:nth-of-type(1)").hide();
-//     $(".booklist ul:nth-of-type(2)").hide();
-//     $(".booklist ul:nth-of-type(3)").hide();
-//     $(".booklist ul:nth-of-type(5)").hide();
- 
-
-
-// });
-
-
-// $('.active:eq(4)').click(function () {
-//     $('.active').css({ "background-color": "transparent" })
-//     $(this).css({ "background-color": "#242424","color":"#fff"  })
-//     $(".booklist ul:nth-of-type(5)").fadeIn('slow').css("display","flex");
-//     $(".booklist ul:nth-of-type(1)").hide();
-//     $(".booklist ul:nth-of-type(2)").hide();
-//     $(".booklist ul:nth-of-type(3)").hide();
-//     $(".booklist ul:nth-of-type(4)").hide();
-
-
-
-// });
-
-
-
 
 
    

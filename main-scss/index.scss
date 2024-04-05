@@ -30,9 +30,11 @@ header {
         justify-content: space-evenly;
         padding: 0px 24px;
 
-        li {
-            @include font($size:18px);
-            color: #333;
+        li { 
+            font-size: 16px;
+            color: #242424;
+           cursor: pointer;
+           font-weight: bold;
         }
     }
 

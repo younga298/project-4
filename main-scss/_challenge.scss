@@ -5,7 +5,7 @@
     @include wh($w:100%,$h:1510px);
     background-color: #f7f7f7;
     @include padding($top:80px);
-    #text_box{
+    .text_box{
          
         text-align: center;
         h2{
@@ -22,6 +22,7 @@
         transition: 2s;
     
     }
+ 
     #img_box{
         width: 1060px;
         height: 568px;
@@ -80,4 +81,6 @@
 
     }
 }
+
+  
 

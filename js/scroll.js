@@ -27,12 +27,12 @@ $(function () {
 
         let sec5 = $('#best_seller').offset().top;
         if (ws > sec5 - 500) {
-            $('#best_seller #text_box').css({ opacity: "1", transform: "translateY(0)" });
+            $('#best_seller .text_box').css({ opacity: "1", transform: "translateY(0)" });
         };
 
         let sec6 = $('#challenge_page').offset().top;
         if (ws > sec6 - 500) {
-            $('#challenge_page #text_box').css({ opacity: "1", transform: "translateY(0)" });
+            $('#challenge_page .text_box').css({ opacity: "1", transform: "translateY(0)" });
             $('#img_box p').css({ opacity: "1", transform: "translateY(0)" });
             $('#lifestory').css({ opacity: "1", transform: "translateY(0)" });
 
@@ -63,7 +63,7 @@ $(function () {
         let sec10 = $('#audioview').offset().top;
         if (ws > sec10 - 500) {
             $('#audioview .textbox').css({ opacity: "1", transform: "translateY(0)" });
-            $('#audioview  #phonewrap').css({ opacity: "1", transform: "translateY(0)" });
+            $('#audioview  .phonewrap').css({ opacity: "1", transform: "translateY(0)" });
         };
  
 

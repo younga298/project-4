@@ -33,7 +33,10 @@
         width: 300px;
         display: flex;
         justify-content: space-around;
-
+       cursor: pointer;
+       p{
+         color: #333;
+       }
         li {
             width: 90px;
             height: 36px;
@@ -50,10 +53,10 @@
             font-weight: 500;
         }
         // li:hover{background-color: white;}
-        // .active {
-        //     background-color: white;
-        //     font-weight: bold;
-        // }
+        .active{
+            background-color: white
+        }
+      
     }
 
     .textbox{width: 300px;  height: 70px;
@@ -79,7 +82,7 @@ p{font-weight: 700; font-size: 20px; }
     .border{border-left: 2px solid; color: #dfdfdf;
         border-right: 2px solid;  }
     }   
-    #read-more{ display: flex;
+    #read-more{ display: flex; padding: 10px 0;
         #imgflex{display: flex; flex-wrap: wrap; 
         img{width: 20px; height: 20px;}}
         

@@ -48,6 +48,10 @@ ul, ol, li {
   width: 300px;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
+}
+#book #buttons p {
+  color: #333;
 }
 #book #buttons li {
   width: 90px;
@@ -63,6 +67,9 @@ ul, ol, li {
   border-radius: 40px;
   font-size: 14px;
   font-weight: 500;
+}
+#book #buttons .active {
+  background-color: white;
 }
 #book .textbox {
   width: 300px;
@@ -110,6 +117,7 @@ ul, ol, li {
 }
 #book #read-more {
   display: flex;
+  padding: 10px 0;
 }
 #book #read-more #imgflex {
   display: flex;
@@ -170,6 +178,7 @@ ul, ol, li {
   width: 100%;
   text-align: center;
   border-bottom: 12px solid #f7f7f7;
+  padding: 11px;
 }
 
 #book-history {
@@ -203,6 +212,7 @@ ul, ol, li {
   width: 296px;
   height: 200px;
   z-index: 10;
+  display: none;
 }
 #book-history #chart-content .inner .his-modal .header strong {
   display: block;
@@ -241,6 +251,8 @@ ul, ol, li {
   color: #8b8b8b;
   font-weight: bold;
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 #book-history #chart-content .inner li:nth-child(1) {
   position: absolute;
@@ -258,20 +270,20 @@ ul, ol, li {
 }
 #book-history #chart-content .inner li:nth-child(3) {
   position: absolute;
-  left: -25px;
-  bottom: -260px;
+  bottom: -20px;
+  left: -24px;
   width: 28px;
 }
 #book-history #chart-content .inner li:nth-child(4) {
   position: absolute;
-  bottom: -260px;
-  left: 128px;
+  bottom: -24px;
+  left: 37%;
   width: 107px;
 }
 #book-history #chart-content .inner li:nth-child(5) {
   position: absolute;
-  bottom: -260px;
-  right: -360px;
+  bottom: -24px;
+  right: 0;
   width: 28px;
 }
 #book-history #chart-content .box {
@@ -327,6 +339,7 @@ ul, ol, li {
   justify-content: space-evenly;
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
 }
 
 .char-story {
@@ -424,8 +437,13 @@ ul, ol, li {
 }
 .intro .open {
   height: 200px;
-  overflow: hidden;
+  width: 100%;
+  padding: 0px 26px;
   transition: height 0.3s ease;
+}
+.intro .open .textbox {
+  height: 160px;
+  overflow: hidden;
 }
 .intro .open h3 {
   font-weight: 700;
@@ -440,11 +458,24 @@ ul, ol, li {
 .intro .open p {
   font-size: 13px;
 }
+.intro .more-position {
+  position: relative;
+}
+.intro .more-position .more {
+  color: #a451f7;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  cursor: pointer;
+}
 .intro ul {
   background-color: #fafaf6;
   width: 1250px;
   height: 100px;
   display: flex;
+  margin: 34px 0;
 }
 .intro ul li {
   border-right: 1px #dfdfdf solid;
@@ -500,29 +531,33 @@ ul, ol, li {
   margin-bottom: 12px;
 }
 .intro #AI #altts {
-  width: 120px;
+  width: 100px;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 14px;
   font-weight: bold;
   color: #555;
 }
 .intro #AI #altts .one-icon {
   overflow: hidden;
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .intro #AI #altts .one-icon img {
   width: 100%;
   height: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
 }
 .intro #YP {
   display: flex;
   justify-content: space-between;
   width: 1250px;
-  height: 80px;
   padding: 25px 25px;
   border-bottom: 12px solid #f7f7f7;
 }
@@ -565,9 +600,8 @@ ul, ol, li {
 #review-com #review #comment {
   width: 1250px;
   padding: 10px 0;
-  margin-bottom: 20px;
 }
-#review-com #review #comment #flex {
+#review-com #review #comment .flex {
   display: flex;
   align-items: baseline;
   width: 100%;
@@ -577,14 +611,14 @@ ul, ol, li {
   width: 96.5%;
   margin-bottom: 20px;
 }
-#review-com #review #comment li #icon-and-id {
+#review-com #review #comment li .icon-and-id {
   display: flex;
   align-items: center;
   width: 260px;
   height: 30px;
   font-size: 13px;
 }
-#review-com #review #comment li #icon-and-id p {
+#review-com #review #comment li .icon-and-id p {
   margin-left: 10px;
 }
 #review-com #review #comment li .img-radius {
@@ -615,17 +649,17 @@ ul, ol, li {
   color: orange;
   font-weight: bold;
 }
-#review-com #data-comment-like {
+#review-com .data-comment-like {
   display: flex;
   flex-direction: column;
   padding: 0px 38px;
   width: 350px;
   font-size: 12px;
 }
-#review-com #data-comment-like a {
+#review-com .data-comment-like a {
   margin: 5px 0px 5px 0px;
 }
-#review-com #data-comment-like span {
+#review-com .data-comment-like span {
   color: #8b8b8b;
   font-size: 10px;
 }
@@ -673,7 +707,7 @@ ul, ol, li {
   font-weight: bold;
   background-color: white;
   resize: none;
-  width: 1100px;
+  width: 1070px;
   height: 25px;
   border: none;
   outline: none;
@@ -685,14 +719,16 @@ ul, ol, li {
   color: #dfdfdf;
 }
 #review-com #create-guide {
-  display: flex;
-  align-items: center;
   width: 1250px;
   height: 20px;
   margin: 0 auto;
   font-size: 15px;
-  padding-top: 30px;
+  padding-top: 20px;
   color: #a5a5a5;
+}
+#review-com #create-guide li {
+  display: flex;
+  align-items: center;
 }
 
 #banner {
@@ -747,7 +783,12 @@ ul, ol, li {
   font-weight: normal;
   font-style: normal;
 }
+body {
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
 header {
+  cursor: pointer;
   border-bottom: solid 1px #dfdfdf;
   width: 100%;
   height: 64px;
@@ -778,13 +819,13 @@ header #headersize ul {
   padding: 0px 24px;
 }
 header #headersize ul li {
-  font-size: 18px;
-  color: #333;
+  font-size: 16px;
+  color: #242424;
   padding: 0px 10px 0px 10px;
+  font-weight: bold;
 }
 header #headersize ul li:hover {
   cursor: pointer;
-  font-weight: bold;
 }
 header #headersize button {
   cursor: pointer;

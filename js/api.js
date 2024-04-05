@@ -303,7 +303,7 @@ for (let i in list07) {
 
 
     $.get('./textfile/intro.txt',function(data){
-        $(".open").html(data)
+        $(".open .textbox").html(data)
     })
 }
 

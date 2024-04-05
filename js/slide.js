@@ -26,6 +26,12 @@ $(function () {
     $("#footer_btn_UP").slideUp();
     $("#footer_btn").show();
   });
+
+  
+
+  
+
+
 });
 
 
